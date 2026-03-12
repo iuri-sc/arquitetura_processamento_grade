@@ -136,7 +136,7 @@ def main(worker_url: str) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="MESTRE - ENVIA LOTES AO WORKER")
     parser.add_argument(
-        "--url", default=os.environ.get("WORKER_URL", "http://localhost:5000")
+        "--url", default=os.environ.get("WORKER_URL", "https://nonmetrically-radiopaque-elidia.ngrok-free.dev")
     )
     args = parser.parse_args()
     main(args.url)
